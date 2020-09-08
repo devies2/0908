@@ -1,0 +1,108 @@
+@media only screen and (max-width:900px) {
+
+    #header .nav .depth1 > li > a { 
+        font-size:18px; color:#fff;  
+        padding:0px 20px; 
+    }
+
+}
+
+@media only screen and (max-width:800px) {
+
+    .slide-outer .slide .text p:nth-child(1) {
+        font-size:4.375vw; 
+        max-width:600px; 
+    }
+
+    #header { position:relative; height:90px; 
+        transition:all 0.5s; 
+        /* overflow:hidden  */
+    }
+    #header.on { background:rgba(0,0,0,1); overflow:visible; }
+    #header h1 { padding-top:35px; 
+        text-align:center; }
+    #header h1 img { width:200px; }    
+    #header .open-gnb { display:block; 
+        position:absolute;
+        top:50%; transform:translateY(-50%);
+        left:15px; width:25px; 
+        height:17px; z-index:9999999 }
+    #header .open-gnb  span  { display:block; 
+        width:25px; height:3px;
+        background:#fff; margin-bottom:4px; 
+        border-radius:10px; transition:all 0.5s  } 
+    #header.on  .open-gnb span:nth-of-type(2) { display:none }      
+    #header.on  .open-gnb span:nth-of-type(1) { 
+        transform:rotate(45deg); 
+        position:absolute; top:10px; left:0px;
+    }      
+    #header.on  .open-gnb span:nth-of-type(3) { 
+        transform:rotate(-45deg); 
+        position:absolute; top:10px; left:0px;
+    }    
+        
+        
+
+    #header .nav { display:none; 
+        background:rgba(0,0,0,1);
+        position:fixed; min-width:320px; height:100%;
+        top:90px; right:-320px; text-align:center;
+        transform:translateY(0%);
+        padding-top:40px; 
+        /* transition:right 0.5s; */
+    }
+    #header.on .nav { display:block;   }    
+    #header .nav .depth1 > li { display:block; }
+    #header .nav .depth1 > li > a { 
+        font-size:18px; color:#fff;  
+        padding:10px 20px; display:block;
+    }
+    
+
+/* 막대(bar)버튼 애니메이션 */
+.slide-outer .slick-dots { 
+    position:absolute; bottom:20px; width:100%;
+    text-align:center }
+.slide-outer .slick-dots li {
+    display:inline-block; width:auto; 
+    height:auto; background:none;
+    margin:0 0px; position:static; 
+}    
+.slide-outer .slick-dots li button { 
+    width:15px; height:15px; border-radius:50%;
+    border:1px solid #fff; 
+    background:none; text-indent:-99999px;
+    overflow:hidden;  position:static;
+    top:0; left:0; margin:0 5px;
+}
+.slide-outer .slick-dots li.slick-active button { 
+    background:#fff; 
+    animation:none 4.5s both;
+}
+
+/* 슬라이드 자동재생/멈춤 버튼 */
+.slide-outer .plpa {
+    font-size:15px; color:#fff; 
+    background:none; 
+    position:absolute; bottom:20px;
+    left:50%; margin-left:50px;
+}
+
+
+}
+
+@media only screen and (max-width:600px ) {
+
+    .slide-outer .slide .text p:nth-child(1) {
+        font-size:4.375vw; 
+        max-width:320px; 
+    }
+
+    .slide-outer .slide .text p:nth-child(2) {
+        font-size:14px; 
+        margin-top:20px; 
+        letter-spacing:6px;
+    }
+
+
+}
