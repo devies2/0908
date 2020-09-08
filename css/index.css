@@ -136,7 +136,7 @@ html,
 .btn1 {
     /* margin-top: 130px; */
     /* margin-bottom: 50px; */
-    margin: 130px auto 50px;
+    margin: 60px auto 50px;
 }
 
 .btn2, .btn4{
@@ -200,6 +200,15 @@ html,
     margin: 25px 0;
     font-size: 20px;
 }
+.section-outer .section:nth-child(1) .main .text .box-right li:nth-of-type(3) {
+    margin-top: 20px;
+    background: red;
+}
+.section-outer .section:nth-child(1) .main .text .box-right li img {
+    width: 30px;
+    height: 30px;
+}
+
 
 .section:nth-child(2),
 .section:nth-child(3),
